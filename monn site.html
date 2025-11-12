@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RENT CARS KOUBAA — Location de voitures de luxe à Tanger</title>
+  <style>
+    :root {
+      --accent:#06b6d4;
+      --dark:#0f172a;
+      --light:#f9fafb;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:'Poppins',sans-serif;
+      background:linear-gradient(180deg,#0a0f1e,#1b2735);
+      color:white;
+      overflow-x:hidden;
+    }
+    header{
+      display:flex;justify-content:space-between;align-items:center;
+      padding:20px 40px;background:rgba(0,0,0,0.5);
+      position:sticky;top:0;backdrop-filter:blur(8px);z-index:10;
+    }
+    h1{font-size:22px;font-weight:700;color:#00bcd4}
+    .contact{font-size:14px;text-align:right}
+    .contact a{color:var(--accent);text-decoration:none}
+    .hero-carousel{position:relative;overflow:hidden;height:380px;margin-bottom:40px}
+    .hero-carousel img{
+      width:100%;height:380px;object-fit:cover;
+      animation:fadeSlide 32s infinite;
+      position:absolute;top:0;left:0;opacity:0;
+    }
+    @keyframes fadeSlide {
+      0%{opacity:0}
+      5%{opacity:1}
+      25%{opacity:1}
+      30%{opacity:0}
+      100%{opacity:0}
+    }
+    .hero-carousel img:nth-child(1){animation-delay:0s}
+    .hero-carousel img:nth-child(2){animation-delay:8s}
+    .hero-carousel img:nth-child(3){animation-delay:16s}
+    .hero-carousel img:nth-child(4){animation-delay:24s}
+    .fleet{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px;padding:0 40px 60px}
+    .car{
+      background:rgba(255,255,255,0.05);
+      border-radius:14px;
+      overflow:hidden;
+      transition:transform .3s, box-shadow .3s;
+      position:relative;
+    }
+    .car:hover{transform:translateY(-8px) scale(1.02);box-shadow:0 15px 35px rgba(0,0,0,0.4)}
+    .car img{width:100%;height:160px;object-fit:cover;display:block}
+    .car-info{padding:14px}
+    .car-info h3{margin-bottom:6px;font-size:18px;color:#e0f7fa}
+    .car-info p{font-size:13px;color:#9ca3af}
+    .badge{
+      position:absolute;top:10px;left:10px;
+      background:rgba(0,0,0,0.6);
+      padding:5px 10px;border-radius:20px;
+      font-size:13px;font-weight:600;
+    }
+    .price{
+      position:absolute;bottom:10px;right:10px;
+      background:var(--accent);color:#042023;
+      padding:8px 12px;border-radius:10px;font-weight:700;
+    }
+    footer{
+      background:rgba(0,0,0,0.7);
+      text-align:center;padding:15px 10px;font-size:13px;color:#b9e8ee;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🚗 RENT CARS KOUBAA</h1>
+    <div class="contact">
+      <div>📍 Rue Luxe N°7, Soco Alto, Tanger</div>
+      <div>📞 <a href="tel:+212682455446">+212 682 455 446</a></div>
+      <div>✉ <a href="mailto:mohammedkoubaa2005@gmail.com">mohammedkoubaa2005@gmail.com</a></div>
+    </div>
+  </header>
+
+  <!-- Carrousel luxe -->
+  <div class="hero-carousel">
+    <img src="https://images.unsplash.com/photo-1606813902864-ffb6d02e7b85?auto=format&fit=crop&w=1500&q=80" alt="Mercedes G63">
+    <img src="https://images.unsplash.com/photo-1597004890481-b68a0c2e2e5a?auto=format&fit=crop&w=1500&q=80" alt="Porsche Cayenne">
+    <img src="https://images.unsplash.com/photo-1584999734486-75024a2b6d63?auto=format&fit=crop&w=1500&q=80" alt="Mercedes Vito">
+    <img src="https://images.unsplash.com/photo-1616783788260-d416bbcbafb7?auto=format&fit=crop&w=1500&q=80" alt="Mercedes Viano">
+  </div>
+
+  <section class="fleet">
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1627468454799-1be1c43a520e?auto=format&fit=crop&w=1000&q=80" alt="Clio 5 Alpine">
+      <div class="badge">x10</div><div class="price">250 dh</div>
+      <div class="car-info"><h3>Clio 5 Alpine</h3><p>Élégante, compacte et économique.</p></div>
+    </div>
+
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1632238507853-d6f84a531f7a?auto=format&fit=crop&w=1000&q=80" alt="Peugeot 208 GT">
+      <div class="badge">x15</div><div class="price">300 dh</div>
+      <div class="car-info"><h3>Peugeot 208 GT</h3><p>Confort moderne, design sportif.</p></div>
+    </div>
+
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1617814146980-c5d7b9f84144?auto=format&fit=crop&w=1000&q=80" alt="Peugeot 308">
+      <div class="badge">x5</div><div class="price">500 dh</div>
+      <div class="car-info"><h3>Peugeot 308</h3><p>Berline dynamique et raffinée.</p></div>
+    </div>
+
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1605348532760-6753d7a3c821?auto=format&fit=crop&w=1000&q=80" alt="Golf 8 GTD">
+      <div class="badge">x6</div><div class="price">600 dh</div>
+      <div class="car-info"><h3>Golf 8 GTD</h3><p>Performance et confort allemand.</p></div>
+    </div>
+
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1603540367465-661c518ee59b?auto=format&fit=crop&w=1000&q=80" alt="Seat Ibiza">
+      <div class="badge">x5</div><div class="price">400 dh</div>
+      <div class="car-info"><h3>Seat Ibiza</h3><p>Urbaine, stylée et agile.</p></div>
+    </div>
+
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1607706189992-00f93c7b8f9c?auto=format&fit=crop&w=1000&q=80" alt="Cupra Formentor">
+      <div class="badge">x5</div><div class="price">700 dh</div>
+      <div class="car-info"><h3>Cupra Formentor</h3><p>Design audacieux et moteur puissant.</p></div>
+    </div>
+
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1606813902864-ffb6d02e7b85?auto=format&fit=crop&w=1000&q=80" alt="Touareg">
+      <div class="badge">x2</div><div class="price">1200 dh</div>
+      <div class="car-info"><h3>Volkswagen Touareg</h3><p>SUV de prestige et confort absolu.</p></div>
+    </div>
+
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1624359136352-7dfae993c864?auto=format&fit=crop&w=1000&q=80" alt="Tiguan">
+      <div class="badge">x2</div><div class="price">1000 dh</div>
+      <div class="car-info"><h3>Volkswagen Tiguan</h3><p>Compact SUV polyvalent.</p></div>
+    </div>
+
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1630409353171-eecf3df794d4?auto=format&fit=crop&w=1000&q=80" alt="Mercedes G63">
+      <div class="badge">x1</div><div class="price">3800 dh</div>
+      <div class="car-info"><h3>Mercedes G63 AMG</h3><p>Symbole du luxe et de la puissance.</p></div>
+    </div>
+
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1627454571570-3a7f38b13f31?auto=format&fit=crop&w=1000&q=80" alt="Porsche Cayenne">
+      <div class="badge">x2</div><div class="price">3000 dh</div>
+      <div class="car-info"><h3>Porsche Cayenne</h3><p>Élégance et performance sportive.</p></div>
+    </div>
+
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1620912189868-8d067188e8f0?auto=format&fit=crop&w=1000&q=80" alt="Dacia Logan">
+      <div class="badge">x10</div><div class="price">250 dh</div>
+      <div class="car-info"><h3>Dacia Logan</h3><p>Fiabilité et économie assurée.</p></div>
+    </div>
+
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1605348836360-778e0e0ed61d?auto=format&fit=crop&w=1000&q=80" alt="Mercedes Vito">
+      <div class="badge">x1</div><div class="price">4000 dh</div>
+      <div class="car-info"><h3>Mercedes Vito</h3><p>Transport VIP et grand confort.</p></div>
+    </div>
+
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1616783788260-d416bbcbafb7?auto=format&fit=crop&w=1000&q=80" alt="Mercedes Viano">
+      <div class="badge">x1</div><div class="price">4000 dh</div>
+      <div class="car-info"><h3>Mercedes Viano</h3><p>Minivan premium et spacieux.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 RENT CARS KOUBAA — Rue Luxe N°7, Soco Alto, Tanger — +212 682 455 446
+  </footer>
+</body>
+</html>
